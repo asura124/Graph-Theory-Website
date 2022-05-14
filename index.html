@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Shortest Paths Algorithms in Video Games</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1 class="title"><a href="index.html">Shortest Paths Algorithms in Video Games</a></h1>
+        <nav class="nav-menu">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="dijkstra.html">Dijkstra's Algorithm</a></li>
+                <li><a href="astar.html">A* Algorithm</a></li>
+                <li><a href="geneticalgorithm.html">Genetic Algorithm</a></li>
+                <li><a href="antcolony.html">Ant Colony Optimization</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active"
+                style="background-image: url(https://i.ytimg.com/vi/w9rCP3JouAM/maxresdefault.jpg);">
+                <img src="https://i.ytimg.com/vi/w9rCP3JouAM/maxresdefault.jpg"
+                    alt="Slide 1" style="width:100%;">
+            </div>
+
+            <div class="item"
+                style="background-image: url(https://demonstrations.wolfram.com/AntColonyOptimizationACO/img/popup_3.png);">
+                <img src="https://demonstrations.wolfram.com/AntColonyOptimizationACO/img/popup_3.png"
+                    alt="Slide 2" style="width:100%;">
+            </div>
+
+            <div class="item"
+                style="background-image: url(https://d3i71xaburhd42.cloudfront.net/5dce47f2f4571e75c6e1945e1fbacd50380a92f2/41-Figure2.11-1.png);">
+                <img src="https://d3i71xaburhd42.cloudfront.net/5dce47f2f4571e75c6e1945e1fbacd50380a92f2/41-Figure2.11-1.png"
+                    alt="Slide 3" style="width:100%;">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="box about" style="float: right;">
+        <h3>Why is Path Finding Important in Video Games?</h3>
+            <ul>
+                <li>NPCs - Make up the crux of many video games. </li>
+                <li>AI is utilized in practically every game</li>
+                <li>Pathfinding requires CPU usage</li>
+                <li>Minimaps/World Maps within games (Open world)</li>
+                <li>Very common algorithms used in most games is the A* algorithm or Dijkstra's algorithm which we’ve looked at together as a class.</li>
+            </ul>
+        <h3>Considerations with Pathfinding in Video Games</h3>
+        <ul>
+            <li>Focus on research is based on the AI Model
+                <ul>
+                <li>Pathfinding for AI characters</li>
+                </ul>
+            </li>
+            <li>Several algorithms looked at were A* (the most common technique for pathfinding)
+                <ul>
+                    <li>
+                        Additional others like Dijkstra’s Algorithm, Genetic Algorithm, Ant Colony Optimization
+                    </li>
+                </ul>
+            </li>
+            <li>Static and Dynamic Pathfinding (Metaheuristic vs Heuristic)</li>
+            <li>Concluded the pathfinding algorithms in terms of time/performance
+                <ul>
+                    <li>Did not mention specific methods</li>
+                    <li>Did not list games examined either</li>
+                </ul>   
+            </li>     
+        </ul>
+        <h3>Comparison of Pathing Algorithms</h3>
+            <h4><u>Heuristic algorithms</u></h2>
+                <ul>
+                    <li>Aim to find a good solution to a specific problem in a reasonable amount of time with no guarantee of efficiency</li>
+                    <li>Satisfactory solution where an optimal solution is impractical</li>
+                </ul>
+            <h4><u>Meta-Heuristic algorithms</u></h2>
+            <ul>
+                <li>High-level strategies that combine lower-level techniques for exploration and exploitation of search space</li>
+                <li>Based on natural phenomenon</li>
+                <li>A* and Dijkstra's used as a solution to find the shortest path</li>
+                <li>Ant colony optimization (ACO) and genetic algorithm used to find minimum cost path in a graph</li>
+                <li>A* - RPGs, racing, turn-based strategy</li>
+                <li>Dijkstra's - network routing, public transportation, logistics</li>
+                <li>Genetic - biomimetic, automotive design, engineering design, robotics</li>
+                <li>Ants - robotics, submarine</li>
+            </ul>
+        
+        </br>
+        <p>Sources: <a
+                href="https://iopscience.iop.org/article/10.1088/1757-899X/769/1/012021/pdf#:~:text=The%20A*%20algorithm%20was%20introduced,to%20capture%20the%20player%20character">iopscience.iop.org</a>
+            </p>
+    </div>
+
+    <div class="footer">
+        <div class="active-input-group">
+            <h3>Group Members</h3>
+            <p><a class="click" href="">David Xue</a>, <a class="click"
+                    href="">Ethan Tam</a>, <a class="click"
+                    href="">Orion Browne</a>, <a class="click"
+                    href="https://github.com/perlaescano">Perla Escano</a>,
+                    <a class="click"
+                    href="">Hammad Siddiqui</a></p>
+        </div>
+        <div class="input-group">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
