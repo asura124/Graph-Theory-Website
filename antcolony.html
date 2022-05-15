@@ -23,21 +23,92 @@
         <li><a href="dijkstra.html">Dijkstra's Algorithm</a></li>
         <li><a href="astar.html">A* Algorithm</a></li>
         <li><a href="geneticalgorithm.html">Genetic Algorithm</a></li>
-        <li class="active"><a href="antcolony.html">Ant Colony Optimization</a></li>    
+        <li class="active"><a href="antcolony.html">Ant Colony Optimization</a></li>
       </ul>
     </nav>
   </header>
   <h1 style="text-align: center;">Ant Colony Optimization</h1> <!-- Centers the header Ant Colony Optimization -->
   <hr> <!-- inserts a head ruler to separate sections-->
- 
+
+  <h2 style = "text-align:center"> ⛔ ACO mimics the foraging behavior of social ants in a colony, and pheromone is used for simulating the local interactions and communications among ants. ⛔ </h2>
+
   <div>
-  <p style="font-size: 1.5em;"><em> 
-    
+  <p style="font-size: 1.5em;"><em>
+
+      <div style = "text-align: center">
+        <img src = "https://i.ibb.co/3pyDQy8/ant-colony.png" alt = "Ant Colony example" style = "width:50%;height:auto;">
+        <!-- <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Aco_branches.svg/2000px-Aco_branches.svg.png" alt = "Ant Colony example" style = "width:50%;height:auto;"> -->
+        Yep. It's based on the ants in real life
+      </div>
+
+
+      <details style = "margin-top:2em;"> <!-- Neat way to add spoilers or involve user interaction with clicking -->
+         <summary style = "cursor:pointer; padding:4px;background-color: #eeeeee;"><h2>Q: Why Ant Colony Optimization? (ACO)</h2> </summary>
+
+        <h3 style = "padding:5px;margin:0px;"> A: ACO is a probabilistic technique for solving computational problems which can be reduced to finding good paths through graphs. It can have several advantages over other algorithms too!
+      </h3>
+      </details>
+
+    <h3 style = "text-align:center;">
+
+      <details> <!-- Neat way to add spoilers or involve user interaction with clicking -->
+         <summary style = "cursor:pointer; padding:4px;background-color: #eeeeee;">ACO has had a relatively short history </summary>
+
+        <h3 style = "padding:5px;margin:0px;"> Firstly introduced by Marco Dorigo (1992)
+      </h3>
+      </details>
+
+    </h3>
+
+
+
+    <img src = "https://upload.wikimedia.org/wikipedia/en/timeline/net19x8sqy5o3d3xlilh42st4v11qcm.png" alt = "Wikipedia Ant colony history" style = "width:auto;height:500px">
+    <div style = 'text-align:center'> Source: Wikipedia </div>
+    <br> <!-- Break once -->
+    <br> <!-- Break once -->
+
+
+    <!-- PROS CONS TABLE -->
+
+
+    <div>
+      <table width = "85%" style = "font-size: 5rem;margin-left:7.5%;">
+        <tr>
+          <th style = "background-color: #eeeeee;">PROS</th>
+          <th style = "background-color: #eeeeee;">CONS</th>
+        </tr>
+        <tr>
+          <td>Utilization in dynamic scenarios like against dynamic obstacles</td>
+          <td>Can lead to rapid discovery of decent solutions</td>
+        </tr>
+        <tr>
+          <td>Coding such an algorithm is challenging</td>
+          <td>Analysis can be hard</td>
+
+        </tr>
+        <tr>
+          <td>Can be efficient for Traveling Salesman and likeminded problems</td>
+          <td>Random decision making</td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div style = "margin-top:2em;">
+        <iframe width="35.5%" height="40%" src="https://www.youtube.com/embed/X-iSQQgOd1A" title="Ant Colony Optimizaion demo" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br> <!-- Break once -->
+        Demo implmentation of Ant Colony.
+  </div>
     </em></p>
 
-    <p>Sources:
-       <a href=""></a>
   </div>
+  <p style = "font-size:1.5em;">Sources:
+     <ol>
+      <li> <a href = "https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms"> Wiki Link </a> </li>
+      <li> <a href = "https://www.w3schools.com"> W3 Schools for help on tags/styling/misc info </a> </li>
+     </ol>
+     <a href=""></a>
+  </p>
   <p>&nbsp;</p>
   <!--added for aesthetic purposes-->
 
@@ -48,8 +119,19 @@
       margin-left: auto;
       margin-right: auto;
     }
+    div{
+      text-align:center
+    }
+    td{
+      background-color:#595959
+    }
+    td,th{
+      border: 1px solid;
+      padding: 4.5px;
+    }
+
   </style>
-  <img src=""  style=width:30%>
+  <!-- <img src=""  style=width:30%> -->
 </body>
 <!--end body-->
 
