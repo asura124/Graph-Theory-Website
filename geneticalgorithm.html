@@ -30,13 +30,44 @@
   <h1 style="text-align: center;">Genetic Algorithm</h1> <!-- Centers the header A* Algorithm -->
   <hr> <!-- inserts a head ruler to separate sections-->
  
-  <div>
+  <div style="display:inline-block;">
   <p style="font-size: 1.5em;"><em> 
-    
+    <h1>What is the Genetic Algorithm?</h1>
+      <p>The Genetic Algorithm is a Metaheuristic algorithm that takes its ideas from biology. From the iopscience paper,
+        a Metaheuristic algorithm is defined as "High-level strategies that combine lower-level techniques for exploration
+        and exploitation of search space" <a href="#link1">[1]</a>. To find the shortest path, we slowly minimize the distance between our starting
+        point and our desired end point. 
+      </p>
+    <div style="vertical-align:top;float: right;">
+        <img src="https://cdn-images-1.medium.com/max/600/1*TZ840m0DvghL80GodVGLeQ.png">
+    </div>
+    <h1>How does it work?</h1>
+      <p>Takes 3 basic ideas from biology: selection, inheritance, and mutation.</p>
+      <h4>Selection:</h4>
+      <p>Initially select some points within the population</p>
+      <h4>Inheritance:</h4>
+      <p>We takes the best "qualities" of our points to help us minimize our path to our desired location.</p>
+      <h4>Mutation:</h4>
+      <p>We take some of our points and randomly change some of its qualities/position to provide some randomness. </p>
+      <br>
+      <p>We repeat this process until the length of our path converges to an value and that would be our shortest path.</p>
+    <h1>Applications to Video Games</h1>
+      <p>Genetic algorithm is used in things such as AI and player Pathfinding. An Example Game: NERO</p>
+      <h4>NERO</h4>
+      <p>A game made from the University of Texas. The game focuses on an user giving instructions to their robots. Based on the
+        instructions the user gives, the robots will act an certain way. The robots will slowly learn and adapt to improve given the 
+        instructions they were told. The University uses the genetic algorithm to help the AI adapt and improve with their given intructions such
+        as better positioning or pathing. <a href="#link2">[2]</a>
+      </p>
+      <img src="http://nn.cs.utexas.edu/NERO/images/screenshot_004-00011.png" height="50%">
     </em></p>
 
     <p>Sources:
-       <a href=""></a>
+      <ol>
+       <li><a id="link1" href="https://iopscience.iop.org/article/10.1088/1757-899X/769/1/012021/pdf#:~:text=The%20A*%20algorithm%20was%20introduced,to%20capture%20the%20player%20character">Pathfinding Algorithms in Game Devolpment Paper</a></li>
+       <li><a id="link2" href="http://nn.cs.utexas.edu/NERO/about.html">NERO</a></li>
+       <li><a href="https://en.wikipedia.org/wiki/Genetic_algorithm">Wikipedia link</a></li>
+       </ol>
   </div>
   <p>&nbsp;</p>
   <!--added for aesthetic purposes-->
@@ -49,7 +80,7 @@
       margin-right: auto;
     }
   </style>
-  <img src=""  style=width:30%>
+  <!--<img src=""  style=width:30%> -->
 </body>
 <!--end body-->
 
