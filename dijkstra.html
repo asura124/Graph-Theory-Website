@@ -35,28 +35,30 @@
     Created by Edsger W. Dijkstra in 1956. It was the default shortest pathfinding algorithm for games until A* came along in 1968.
     A* was essentially an extension of Dijsktra's algorithm with the addition of a heuristic. 
     However, it continues to be widely used by routers in their routing protocols to update their forwarding tables by finding the shortest cost path from the source router to the rest of the routers in the network. 
-    This allows you to figure out how which routers and in which order to send a given data packet through with the most efficiency. 
+    This allows you to figure out how which routers and in which order to send a given data packet through to achieve the highest efficiency. 
     
 
   </em></p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif"> 
   <ol> <b>Psuedocode</b>
-    <li>function Dijkstra(Graph, source):</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li><p>function Dijkstra(Graph, Source):</p></li>
+    <li><p style="margin-left:40px">for each vertex V in Graph</p></li>
+    <li><p style="margin-left:80px">distance[V] <- infinite</p></li>
+    <li><p style="margin-left:80px">previous[V] <- NULL</p></li>
+    <li><p style="margin-left:80px">If V != Source, add V to Priority Queue Q</p></li>
+    <li><p style="margin-left:40px">distance[Source] <- 0</p></li>
+    <li><p style="margin-left:40px">while Q IS NOT EMPTY</p></li>
+    <li><p style="margin-left:80px">U <- Extract MIN from Q</p></li>
+    <li><p style="margin-left:80px">for each unvisited neighbour V of U</p></li>
+    <li><p style="margin-left:120px">tempDistance <- distance[U] + edge_weight(U, V)</p></li>
+    <li><p style="margin-left:120px">if tempDistance < distance[V]</p></li>
+    <li><p style="margin-left:160px">distance[V] <- tempDistance</p></li>
+    <li><p style="margin-left:160px">previous[V] <- U</p></li>
+    <li><p style="margin-left:40px">return distance[], previous[]</p></li>
   </ol>
     <p>Sources:
+       <a href=""></a>
+       <a href=""></a>
        <a href=""></a>
        <p>Testing</p>
   </div>
